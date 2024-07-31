@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>支出管理</title>
+</head>
+<body>
+    <form id="userForm">
+        <label for="date">日付</label>
+        <input type="date" id="date" name="date"><br>
+
+        <label for="cost">金額</label>
+        <input type="number" id="cost" name="cost"><br>
+        
+        <label for="note">メモ</label>
+        <input type="text" id="note" name="note"><br>
+        <br>
+        支出の種類<br>
+        <input type="radio" id="food" name="category" value="食費">
+        <label for="food">食費</label><br>
+        <input type="radio" id="daily" name="category" value="日用品">
+        <label for="daily">日用品</label><br>
+        <input type="radio" id="hobby" name="category" value="趣味・娯楽">
+        <label for="hobby">趣味・娯楽</label><br>
+        <input type="radio" id="traffic" name="category" value="交通費">
+        <label for="traffic">交通費</label><br>
+        <input type="radio" id="health" name="category" value="健康・医療">
+        <label for="health">健康・医療</label><br>
+        <input type="radio" id="beauty" name="category" value="衣服・美容">
+        <label for="beauty">衣服・美容</label><br>
+        <input type="radio" id="edu" name="category" value="教養・教育">
+        <label for="edu">教養・教育</label><br>
+        <input type="radio" id="house" name="category" value="光熱費・通信費・住宅">
+        <label for="house">光熱費・通信費・住宅</label><br>
+        <input type="radio" id="tax" name="category" value="税・社会保障">
+        <label for="tax">税・社会保障</label><br>
+        <input type="radio" id="insurance" name="category" value="保険">
+        <label for="insurance">保険</label><br>
+        <input type="radio" id="other" name="category" value="その他">
+        <label for="other">その他</label><br>
+        <br>
+
+        <button type="button" onclick="addToTable()">追加</button>
+        <input type="reset" value="リセット">
+    </form>
+
+    <hr>
+
+    <table id="output-table" border="2">
+        <thead>
+            <tr>
+                <th>日付</th>
+                <th>金額</th>
+                <th>メモ</th>
+                <th>支出の種類</th>
+                <th>削除</th>
+                </tr>
+                </thead>
+        <tbody>
+            </tbody>
+        
+        </table>
+
+    <div id="output"></div>
+
+    <!-- 合計金額を表示するための要素 -->
+     <div id="total-container">
+        合計金額: <span id="total-amount">0</span> 円
+    </div>
+    <script src ="mission6-2.js"></script>
+</body>
+</html>
