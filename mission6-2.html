@@ -1,12 +1,16 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ja">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>支出管理</title>
 </head>
 <body>
+    <h1>支出管理アプリ</h1>
+    <p>支出を入力してください</p>
+    <hr>
     <form id="userForm">
+        <b>
         <label for="date">日付</label>
         <input type="date" id="date" name="date"><br>
 
@@ -15,28 +19,27 @@
         
         <label for="note">メモ</label>
         <input type="text" id="note" name="note"><br>
-        <br>
-        支出の種類<br>
+        支出の種類<br></b>
         <input type="radio" id="food" name="category" value="食費">
-        <label for="food">食費</label><br>
+        <label for="food">食費</label>
         <input type="radio" id="daily" name="category" value="日用品">
-        <label for="daily">日用品</label><br>
+        <label for="daily">日用品</label>
         <input type="radio" id="hobby" name="category" value="趣味・娯楽">
-        <label for="hobby">趣味・娯楽</label><br>
+        <label for="hobby">趣味・娯楽</label>
         <input type="radio" id="traffic" name="category" value="交通費">
-        <label for="traffic">交通費</label><br>
+        <label for="traffic">交通費</label>
         <input type="radio" id="health" name="category" value="健康・医療">
-        <label for="health">健康・医療</label><br>
+        <label for="health">健康・医療</label>
         <input type="radio" id="beauty" name="category" value="衣服・美容">
-        <label for="beauty">衣服・美容</label><br>
+        <label for="beauty">衣服・美容</label>
         <input type="radio" id="edu" name="category" value="教養・教育">
-        <label for="edu">教養・教育</label><br>
+        <label for="edu">教養・教育</label>
         <input type="radio" id="house" name="category" value="光熱費・通信費・住宅">
-        <label for="house">光熱費・通信費・住宅</label><br>
+        <label for="house">光熱費・通信費・住宅</label>
         <input type="radio" id="tax" name="category" value="税・社会保障">
-        <label for="tax">税・社会保障</label><br>
+        <label for="tax">税・社会保障</label>
         <input type="radio" id="insurance" name="category" value="保険">
-        <label for="insurance">保険</label><br>
+        <label for="insurance">保険</label>
         <input type="radio" id="other" name="category" value="その他">
         <label for="other">その他</label><br>
         <br>
@@ -46,6 +49,7 @@
     </form>
 
     <hr>
+    <br>
 
     <table id="output-table" border="2">
         <thead>
